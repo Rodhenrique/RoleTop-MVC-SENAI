@@ -12,13 +12,14 @@ using RoletopMvc.ViewModels;
 namespace RoletopMvc.Controllers {
     public class AdministradorController : AbstractController {
         PedidoRepository pedidoRepository = new PedidoRepository ();
+        MensagemRepository mensagemRepository = new MensagemRepository ();
+        DashboardViewModel dashboardViewModel = new DashboardViewModel ();
+
         public IActionResult ADM () {
             var ninguemLogado = string.IsNullOrEmpty (ObterUsuarioTipoSession ());
 
             if (!ninguemLogado && (uint) TipoUsuario.ADMINISTRADOR == uint.Parse (ObterUsuarioTipoSession ())) {
                 var pedidos = pedidoRepository.ObterTodos ();
-
-                DashboardViewModel dashboardViewModel = new DashboardViewModel ();
 
                 foreach (var pedido in pedidos) {
                     switch (pedido.Status) {
@@ -39,13 +40,38 @@ namespace RoletopMvc.Controllers {
 
                 var emailCliente = HttpContext.Session.GetString (SESSION_CLIENTE_EMAIL);
                 var pedidosCliente = pedidoRepository.ObterTodosPorCliente (emailCliente);
-                MensagemRepository mensagemRepository = new MensagemRepository ();
-
 
                 var mensagem = mensagemRepository.ObterTodos ();
+
                 foreach (var item in mensagem) {
 
-                    dashboardViewModel.mensagem.Add (item);
+                    dashboardViewModel.Mensagem.Add (item);
+                }
+
+                return View (dashboardViewModel);
+            } else {
+                return View ("Erro", new RespostaViewModel () { NomeView = "Dashboard", Mensagem = "Você não tem permissão para acessar o dashboard" });
+            }
+        }
+
+        public IActionResult mensagem (IFormCollection form) {
+
+            var ninguemLogado = string.IsNullOrEmpty (ObterUsuarioTipoSession ());
+
+            if (!ninguemLogado && (uint) TipoUsuario.ADMINISTRADOR == uint.Parse (ObterUsuarioTipoSession ())) {
+
+                dashboardViewModel.UsuarioEmail = ObterUsuarioSession ();
+
+                var emailCliente = HttpContext.Session.GetString (SESSION_CLIENTE_EMAIL);
+                var pedidosCliente = pedidoRepository.ObterTodosPorCliente (emailCliente);
+
+                var mensagem = mensagemRepository.ObterTodos ();
+
+                dashboardViewModel.NomeView = "Mensagem";
+
+                foreach (var item in mensagem) {
+
+                    dashboardViewModel.Mensagem.Add (item);
                 }
 
                 return View (dashboardViewModel);
@@ -54,16 +80,25 @@ namespace RoletopMvc.Controllers {
             }
         }
         public IActionResult EnviarEmail (IFormCollection form) {
-            string email; 
-            string titulo; 
+            string email;
+            string titulo;
             string mensagem;
 
-            mensagem = form["resposta"];
-            titulo = form["tituloDoTexto"];
-            email=form["emaildamensagem"];
+            try {
+                mensagem = form["resposta"];
+                titulo = form["tituloDoTexto"];
+                email = form["emaildamensagem"];
 
-            SendMail(email,titulo,mensagem);
-            return View("Sucesso",new RespostaViewModel("sua mensagem foi enviada com sucesso!!!"));
+                if (mensagem.Equals("") || titulo.Equals("")) {
+                    return View ("Erro", new RespostaViewModel ("sua mensagem não foi enviada!!!") { NomeView = "ADM", UsuarioEmail = ObterUsuarioSession (), UsuarioNome = ObterUsuarioNomeSession () });
+                }
+
+                SendMail (email, titulo, mensagem);
+                return View ("Sucesso", new RespostaViewModel ("sua mensagem foi enviada com sucesso!!!") { NomeView = "ADM", UsuarioEmail = ObterUsuarioSession (), UsuarioNome = ObterUsuarioNomeSession () });
+
+            } catch (System.Exception) {
+                return View ("Erro", new RespostaViewModel ("sua mensagem não foi enviada!!!") { NomeView = "ADM", UsuarioEmail = ObterUsuarioSession (), UsuarioNome = ObterUsuarioNomeSession () });
+            }
         }
         public bool SendMail (string email, string titulo, string mensagem) {
             try {

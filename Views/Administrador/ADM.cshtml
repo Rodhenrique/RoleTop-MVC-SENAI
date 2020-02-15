@@ -69,47 +69,29 @@
 <div class="dash-mensagem">
     <h2>mensagens</h2>
     <table>
-        <tr>
-            <th>nome</th>
-            <th>Data e Hora</th>
-            <th colspan="2">objetivo</th>
-        </tr>
-                
-        <tr>  
-                @foreach (var item in @Model.mensagem)
-                {
-                    <td>@item.Email</td>
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>Data e Hora</th>
+                <th colspan="2">objetivo</th>
+            </tr>
+        </thead>
+
+    <tbody>
+            @foreach (var item in @Model.Mensagem)
+            {
+            <tr>  
+                    <td>@item.cliente.Nome</td>
                     <td>@item.Data</td>
                     <td>@item.Objetivo</td>
-                    <td><a  data-modal-target="#modal">ler</a></td>
+                    <td><a onclick="myFunction()">Ler</a></td> 
+            </tr>
+            }
+            
+    </tbody>
+</table>
 
-               
-                   
-            <div class="modal" id="modal">
-                    <div class="modal-header">
-                        <div class="title">Mensagem do cliente</div>
-                        <button data-close-button class="close-button">&times;</button>
-                    </div>
-                    <div class="modal-body" id="MensagemADM">
-                        <form  method="POST" action='@Url.Action("EnviarEmail", "Administrador")'>
-                            <input type="email" name="emaildamensagem"  value="@item.Email">
-                            <input type="text" maxlength="25" name="recebe" disabled value="@item.Objetivo">
-                            <input type="text" name="mensagemDoCliente"id="motivo" disabled @item.MensagemDoCliente>
-                            <input type="text" name="tituloDoTexto" placeholder="Titulo do texto">
-                            <input type="text" maxlength="1000" name="resposta" placeholder="Escreva a Resposta"id="motivo">
-                            <input type="submit">
-                            
-                        </form>
-                    </div>
-                </div>
-                <div id="overlay"></div>
-                }
-                
-        </tr>
-    </table>
-
-</div>
-
+     
 <!-- <div class="dash-mensagem">
 
 <div class="ajuste2">

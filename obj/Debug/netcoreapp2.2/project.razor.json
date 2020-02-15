@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\RoletopMvc.csproj",
+  "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\RoletopMvc.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,112 +2961,117 @@
   "RootNamespace": "RoletopMvc",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Home\\Agenda.cshtml",
-      "TargetPath": "Views\\Home\\Agenda.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Galerias\\Galeria.cshtml",
-      "TargetPath": "Views\\Galerias\\Galeria.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Galerias\\GaleriaDonos.cshtml",
-      "TargetPath": "Views\\Galerias\\GaleriaDonos.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Cadastro\\Index.cshtml",
-      "TargetPath": "Views\\Cadastro\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Shared\\Sucesso.cshtml",
-      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Home\\Dados.cshtml",
-      "TargetPath": "Views\\Home\\Dados.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Home\\QuemSomos.cshtml",
-      "TargetPath": "Views\\Home\\QuemSomos.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Shared\\Erro.cshtml",
-      "TargetPath": "Views\\Shared\\Erro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\DashCliente\\Dashboard.cshtml",
-      "TargetPath": "Views\\DashCliente\\Dashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Administrador\\ADM.cshtml",
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Administrador\\ADM.cshtml",
       "TargetPath": "Views\\Administrador\\ADM.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Galerias\\Buscar.cshtml",
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Home\\Dados.cshtml",
+      "TargetPath": "Views\\Home\\Dados.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Cadastro\\Index.cshtml",
+      "TargetPath": "Views\\Cadastro\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Galerias\\Buscar.cshtml",
       "TargetPath": "Views\\Galerias\\Buscar.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Galerias\\GaleriaCliente.cshtml",
-      "TargetPath": "Views\\Galerias\\GaleriaCliente.cshtml",
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Home\\Agenda.cshtml",
+      "TargetPath": "Views\\Home\\Agenda.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Cliente\\Login.cshtml",
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Cliente\\Login.cshtml",
       "TargetPath": "Views\\Cliente\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Agendamento\\Index.cshtml",
-      "TargetPath": "Views\\Agendamento\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\DashCliente\\Dados.cshtml",
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\DashCliente\\Dados.cshtml",
       "TargetPath": "Views\\DashCliente\\Dados.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\53167369825\\Desktop\\Roletop.mvc\\RoletopMvc\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Galerias\\GaleriaCliente.cshtml",
+      "TargetPath": "Views\\Galerias\\GaleriaCliente.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Galerias\\GaleriaDonos.cshtml",
+      "TargetPath": "Views\\Galerias\\GaleriaDonos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Shared\\Erro.cshtml",
+      "TargetPath": "Views\\Shared\\Erro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\DashCliente\\Dashboard.cshtml",
+      "TargetPath": "Views\\DashCliente\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Agendamento\\Index.cshtml",
+      "TargetPath": "Views\\Agendamento\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Home\\QuemSomos.cshtml",
+      "TargetPath": "Views\\Home\\QuemSomos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Shared\\Sucesso.cshtml",
+      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Galerias\\Galeria.cshtml",
+      "TargetPath": "Views\\Galerias\\Galeria.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Administrador\\Mensagem.cshtml",
+      "TargetPath": "Views\\Administrador\\Mensagem.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\henri\\Desktop\\RoleTop-MVC-SENAI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }

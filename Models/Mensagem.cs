@@ -8,15 +8,13 @@ namespace RoletopMvc.Models {
         public string Objetivo { get; set; }
         public Cliente cliente { get; set; }
         public uint Id{ get; set; }
+        
         public Mensagem () {
-
-        }
-        public Mensagem (uint id,string email, string mensagens, DateTime date, string objetivo) {
-            this.Email = email;
-            this.MensagemDoCliente = mensagens;
-            this.Data = date;
-            this.Objetivo = objetivo;
-            this.Id = id;
+            this.Email = Email;
+            this.MensagemDoCliente = MensagemDoCliente;
+            this.Data = Data;
+            this.Objetivo = Objetivo;
+            this.Id = Id;
             this.cliente = new Cliente ();
 
         }

@@ -74,11 +74,8 @@ nav ul {
 }
 
 nav li {
-    border: #000000 solid 1px;
-    border-radius: 2em;
-    background-color: #f1f1f1;
-   height: 1.1em;
-   margin: .20em;
+    height: 1.1em;
+    margin: .20em;
 }
 
 nav a {
@@ -88,7 +85,7 @@ nav a {
 }
 
 nav a:hover{
-    color: #7D0093;
+    color: white;
     box-shadow: 0 2px;
     margin: auto;
 }
@@ -114,7 +111,7 @@ nav ul > li {
 }
 
 nav ul > li > a {
-    padding: 0.9em;
+    padding: 0.3em;
     text-decoration: none;
     color: #361a0c;
     font-weight: bold;
@@ -146,13 +143,6 @@ nav li ul li{
 nav ul li a {
     justify-content: center;
 }
-
-
-
-a.active {
-    color: #2ecc71;
-}
-
 
 
 /**********************************************************************************************************************
@@ -1245,7 +1235,7 @@ CSS DOS BOTOES DADOS CANCELAR E SALVAR
 
 
 .dash-mensagem ,.dash-adm ,.block h2{
-    text-align: center;
+    text-align: -webkit-center;    
 }
 
 .block {
@@ -1329,6 +1319,7 @@ CSS DOS BOTOES DADOS CANCELAR E SALVAR
 .dash-mensagem a {
     text-decoration: none;
     color: #000000;
+    cursor: pointer;
 }
 .dash-mensagem a:hover{
     color: #FFC600;
@@ -1407,73 +1398,48 @@ input[type=text]#motivo
     margin: 0 auto;
 }
 
+.enviar{
+    display: flex;
+    flex-direction: column;
+    height: 410px;
+    width: 350px;
+    background-color: white;
+    border-radius: 1em;
+    text-align: center;
+    margin: 1.5em auto;
+}
+.enviar input {
+    width: 300px;
+    height: 40px;
+    border-radius: 1em 0 1em 0;
+    margin: .50em auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.enviar h3{
+    font-size: 24px;
+    margin: .30em auto;
+}
+#inputlog{
+    height: 100px;
+    width: 300px;
+}
+
+#inputlog1{
+    height: 40px;
+    width: 220px;
+    font-size: 18px;
+}
+#inputlog1:hover{
+    background-color: #7D0093;
+    color: white;
+}
+
+
 /****************************************************************************************** 
                                         Java script
  *************************************************************************************/
- .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    border: 1px solid black;
-    border-radius: 10px;
-    z-index: 10;
-    background-color: white;
-    width: 500px;
-    max-width: 80%;
-  }
-  
-  .modal.active {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .modal-header {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid black;
-  }
-  
-  .modal-header .title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .modal-header .close-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  
-  .modal-body {
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  #overlay {
-    position: fixed;
-    opacity: 0;
-    transition: 200ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-    pointer-events: none;
-  }
-  
-  #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
 /****************************************************************************************** 
 
  *************************************************************************************/
@@ -1797,12 +1763,20 @@ img {vertical-align: middle;}
 
     nav #bt-mobile-menu {
         display: block;
+        background-color: white;
+        border-radius: 1em 0 1em 0;
         margin: .80em auto;
     }
 
 
     nav .bt-common-menu {
         display: none;
+        background-color: white;
+        border-radius: 1em 0 1em 0;
+        background-color: #A660B3;
+        margin: .30em;
+        padding: 0;
+
     }
 
     nav .bt-common-menu.active {

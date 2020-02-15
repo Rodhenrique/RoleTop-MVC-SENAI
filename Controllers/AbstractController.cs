@@ -9,6 +9,7 @@ namespace RoletopMvc.Controllers
         protected const string SESSION_CLIENTE_NOME = "nome_cliente";
         protected const string SESSION_CLIENTE_TIPO = "cliente_tipo";
         protected const string PATH_FOTOS = "img\\fotos";
+        protected const string PATH_USUARIO = "img\\fotos\\usuario";
 
         protected string ObterUsuarioSession()
         {

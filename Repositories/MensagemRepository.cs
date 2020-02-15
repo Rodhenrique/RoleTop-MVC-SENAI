@@ -22,28 +22,28 @@ namespace RoletopMvc.Repositories {
 
         public List<Mensagem> ObterTodos () {
             var linhas = File.ReadAllLines (PATH);
-            Cliente cliente = new Cliente ();
-            Mensagem m = new Mensagem ();
+            Cliente cliente = new Cliente();
+            ClienteRepository clienteRepository = new ClienteRepository();
             List<Mensagem> mensagems = new List<Mensagem> ();
 
             foreach (var item in linhas) {
+                Mensagem m = new Mensagem ();
 
                 m.Email = ExtrairValorDoCampo ("email", item);
                 m.MensagemDoCliente = ExtrairValorDoCampo ("mensagem", item);
                 m.Data = DateTime.Parse (ExtrairValorDoCampo ("data", item));
                 m.Objetivo = ExtrairValorDoCampo ("objetivo", item);
-                m.Id = uint.Parse(ExtrairValorDoCampo("id", item));
+                m.Id = uint.Parse (ExtrairValorDoCampo ("id", item));
 
-                ClienteRepository clienteRepository = new ClienteRepository ();
+                cliente = clienteRepository.ObterPor(m.Email);
+                m.cliente = cliente;
 
-                m.cliente = clienteRepository.ObterPor(m.Email);
-
-                    mensagems.Add (m);
+                mensagems.Add (m);
 
             }
             return mensagems;
         }
-            public Mensagem ObterPor (ulong id) {
+        public Mensagem ObterPor (ulong id) {
             var mensagensTotais = ObterTodos ();
             foreach (var pedido in mensagensTotais) {
                 if (id.Equals (pedido.Id)) {
